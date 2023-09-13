@@ -61,10 +61,6 @@ app.component('product-display', {
         updateVariant(index) {
             this.selectedVariant = index
         }
-        ,
-        updateDetails(index) {
-            this.selectedVariant = index
-        }
     },
     computed: {
         title() {
@@ -72,9 +68,6 @@ app.component('product-display', {
         },
         image() {
             return this.variants[this.selectedVariant].image
-        },
-        detail() {
-            return this.details
         },
         inStock() {
             return this.variants[this.selectedVariant].quantity
