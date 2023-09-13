@@ -1,7 +1,7 @@
 app.component('product-details', {
     props: {
         details: {
-            type: [],
+            type: Array,
             required: true
         }
     },
@@ -9,7 +9,7 @@ app.component('product-details', {
     /*html*/
     `
     <li v-for="detail in details">
-    
+        {{ detail }}
     </li>    
     `
 })
